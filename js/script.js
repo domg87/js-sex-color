@@ -14,9 +14,9 @@ var sesso = prompt("Che sesso sei? Uomo o Donna?");
 // se l'utente inserisce uomo, il colore sarà azzurro
 
 // se l'utente è donna, il colore sarà rosa
-if (isNaN(nome)) {
+if (isNaN(nome) && (sesso === "uomo" || sesso === "donna")) {
   //uomo
-  if (nome == "uomo") {
+  if (sesso == "uomo") {
     var colore = "blue";
   }
   //donna
